@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <link rel="shortcut icon" type="image/png" href="../imagenes/favicon.ico"/>
+        <link rel="stylesheet" href="../css/intermedio.css">
+        <title>Intermedio</title>
+    </head>
+    <body >
+
+        <nav id="main_nav">
+            <ul>
+                <li>
+                    <a href="../index.html">VOLVER</a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://www.duolingo.com/">Duolingo</a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://www.hackthebox.eu/">Hack the box</a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://git-scm.com/">GIT</a>
+                </li>
+            </ul>
+        </nav>
+        <div id="navigation">
+            <a target="_blank" href="https://www.duolingo.com/">Duolingo</a>
+            <a class="dn" target="_blank" href="https://www.hackthebox.eu/">Hack the box</a>
+            <a target="_blank" href="https://git-scm.com/">GIT</a>
+        </div>
+
+        <h1>INTERMEDIO</h1>
+        <div id="top">
+            <h2>Chocolate curry</h2>
+            <p>This is my recipe for making curry purely with chocolate</p>
+            <p>Mmm mm mmmmm</p>
+            <p>Entonces, los siguiente pasos a seguis son:</p>
+        </div>
+
+        <div class="contenido">
+            <textarea name="comentarios" rows="8" cols="80"></textarea>
+        </div>
+
+        <!-- <div class="desafio1">
+		<p>cambie esta linea con VIM</p>
+        </div> -->
+
+        <div class="contenido">
+            <h3>div & em</h3>
+            <div id="scissors">
+                <p>This is <em class="paper">crazy</em></p>
+            </div>
+
+        </div>
+        <div class="contenido">
+            <h3>abbr</h3>
+            <p>This web site is about <abbr title="HyperText Markup Language">HTML</abbr> and <abbr title="Cascading Style Sheets">CSS</abbr>.</p>
+            <p>Pruedo programar en <abbr title="Hypertext Preprocessor">PHP</abbr> y en <abbr title="eXtensible Markup Language">XML</abbr>.</p>
+        </div>
+
+        <div class="contenido">
+            <h3>q</h3>
+            <p>Johan Sebastian Mastropiero dijo: <q>Usted me ofende. Justamente a mí, que siempre digo que el artista que se apodera de la idea de otro enturbia las aguas del manantial del espíritu.</q>. Famosa frase de Gunter Frager.</p>
+            <p>So I asked Bob about quotations on the Web and he said <q>I know as much about quotations as I do about pigeon fancying</q>. Luckily, I found HTML Dog and it said:</p>
+        </div>
+
+        <div class="contenido">
+            <h3>blockquote</h3>
+            <blockquote cite="http://www.htmldog.com/guides/html/intermediate/text/">
+                <p>blockquote and q are used for quotations. blockquote is generally used for standalone often multi-line quotations whereas q is used for shorter, in-line quotations.</p>
+            </blockquote>
+        </div>
+
+        <div class="contenido">
+            <h3>figure, blockquote & figcaption</h3>
+            <figure>
+                <blockquote>Mientras me quede algo por hacer, no habré hecho nada.</blockquote>
+                <figcaption>Cayo Julio César</figcaption>
+            </figure>
+        </div>
+
+        <div class="contenido">
+            <h3>cite & q</h3>
+            <p>According to <cite>the Bible</cite>, after six days God said <q>screw this for a lark, I'm having a nap</q>.</p>
+            <p>En el libro <cite>how linux works</cite>, se dice que <q>Linux is a great platform for learning because it doesn’t try to hide anything from you</q>.</p>
+        </div>
+
+        <div class="contenido">
+            <h3>code, var, kbd & samp</h3>
+            <p>If you add the line <code><var>givevaderachuckle</var> = true;</code> to the <code>destroy_planet</code> subroutine and then type <kbd>ilovejabba</kbd> into the console, the big bad green Death Star laser will etch <samp>Slug Lover!</samp> on the planet's surface.</p>
+            <p>EN PHP la variable <code><var>$suma</var> = 3 + 4;</code> se pueda usar con la función <code>echo</code>, cuando llamas a la funcion <kbd>sumar</kbd> y va a decir <samp>7</samp> en la pantalla.</p>
+        </div>
+
+        <div id="miCodigo" class="contenido">
+            <h3>pre & code</h3>
+            <p>Esta sección se encarga de mostras como el el código fuente de PHP.</p>
+            <pre>
+                <code>
+                    &lt;?php echo "Hola"; ?&gt;
+                    &lt;div id="intro"&gt;
+                        &lt;h1&gt;Some heading&lt;/h1&gt;
+                       &lt;p&gt;Some paragraph paragraph thing thing thingy.&lt;/p&gt;
+                    &lt;/div&gt;
+                </code>
+            </pre>
+        </div>
+
+        <div class="contenido">
+            <h3>th, rowspan & colspan</h3>
+            <table>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Edad</th>
+                </tr>
+                <tr>
+                    <td>Santiago</td>
+                    <td colspan="2">Este espacio se ocupa dos celdas y un solo registro</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Row 3, columna 1, also spanning Row 4</td>
+                    <td>Row 3, cell 2</td>
+                    <td>Row 3, cell 3</td>
+                </tr>
+                <tr>
+                    <td>Row 4, cell 2</td>
+                    <td>Row 4, cell 3</td>
+                </tr>
+            </table>
+
+        </div>
+
+        <div class="contenido">
+            <h3>dl,dt & dd</h3>
+            <h5>Some random glossary thing</h5>
+            <dl>
+                <dt>HTML</dt>
+                <dd>Abbreviation for HyperText Markup Language - a language used to make web pages.</dd>
+
+                <dt>Dog</dt>
+                <dd>Any carnivorous animal belonging to the family Canidae.</dd>
+                <dd>The domesticated sub-species of the family Canidae, Canis lupus familiaris.</dd>
+
+                <dt>git</dt>
+                <dd>Versionador de código</dd>
+                <dt>Docker</dt>
+                <dd>Contenedores que se usan para virtualizar espacios de trabajo.</dd>
+                <dt>Milk</dt>
+                <dd>A white liquid produced by cows and used for human consumption.</dd>
+            </dl>
+        </div>
+
+        <div class="contenido">
+            <h3>address, dfn, bdo, ins, del</h3>
+            <h3>Contacto con el Programador</h3>
+            <address>
+                <ul>
+                    <li>0221-457-1724</li>
+                    <li>santiago@enviopack.com</li>
+                    <li>https://app.enviopack.com</li>
+                </ul>
+            </address>
+            <p>
+                Bob's <dfn title="Dog">canine</dfn> mother and <dfn title="Horse">equine</dfn> father sat him down and
+                carefully explained that he was an <dfn title="A mutation that combines two or more sets of chromosomes
+                from different species">allopolyploid</dfn> organism.
+            </p>
+            <p>Cuando estas usando la terminal de <dfn title="Sistema Operativo. Linux Torvald es el creador de su
+                Kernel." >Linux</dfn> y queres ver que directorios hay en donde esta el cursor, usas el comando
+                <dfn title="Comando para listar el contenido de un directorio.">ls.</dfn>
+            </p>
+            <bdo dir="rtl">god lmth</bdo>
+            <p>
+                I have decided to <del datetime="2013-01-26">decrease</del> <ins cite="http://www.icecreamforall.com/changeofpolicy/">
+                    increase</ins> the amount of free ice cream that the State will provide for its citizens.
+            </p>
+
+        </div>
+
+        <div class="contenido">
+            <h3 class="violeta">article, section, header, footer, figure, figcaption, nav</h3>
+            <article>
+                <header id="intro">
+                    <p>Pop!_OS 19.04, el nuevo discípulo aventajado de Ubuntu</p>
+                </header>
+                <section id="main_content">
+                    <p>
+                        Pop!_OS 19.04 es la nueva versión de la distribución de System76, compañía estadounidense especializada
+                        en la venta de portátiles con Linux que desde hace un par de años desarrolla su propio sistema,
+                        afinado para sus equipos, pero disponible para quien quiera usarlo. Se basa en Ubuntu y sí, se le
+                        puede considerar como un discípulo aventajado del original, al menos en lo que al escritorio se refiere.
+                    </p>
+                    <p>
+                        Pop!_OS 19.04 se basa en Ubuntu 19.04, de la que toma sus dos grandes fundamentos: Linux 5.0 y Gnome 3.32,
+                        que es donde reside el grueso de las novedades. En resumen, mejor soporte de hardware, mejor rendimiento y más opciones de configuración.
+                    </p>
+                    <aside class="ubuntu">
+                        <h4>Aside</h4>
+                        <p>
+                            Ya está disponible Ubuntu 19.04, una nueva versión de la distribución de Canonical dirigida a los
+                            usuarios más audaces, es decir, a quienes antes que la estabilidad adquirida y el soporte a largo plazo
+                            de las versiones LTS, prefieren la novedad y no les importa actualizar cómo máximo cada nueve meses.
+                            Si eres de los primeros, quédate con Ubuntu 18.04.2 LTS. Si eres de los segundos, Disco Dingo ha llegado para animarte el fin de semana.
+                        </p>
+                        <figure>
+                            <img id="ubuntu" src="../imagenes/ubuntu.png">
+                            <figcaption>Logo de Ubuntu</figcaption>
+                        </figure>
+                    </aside>
+                    <p>¿Por qué? Porque a grandes rasgos es un clon de Ubuntu, lo cual asegura un estándar de calidad importante.
+                        Sin embargo, Pop!_OS no se limita a cambiarle el aspecto a las aplicaciones. En su primer lanzamiento
+                        lo presentaron como un sistema «cuidadosamente diseñado para creadores, ingenieros informáticos y desarrolladores»,
+                        aunque también viene bien preparado para jugar; y desde entonces la compañía ha trabajado en la forma y el fondo de Pop!_OS,
+                        dotándolo de características propias de lo más interesantes.
+                    </p>
+                </section>
+                <section id="related">
+                    <ul>
+                        <li><a href="https://www.muylinux.com/2019/04/22/pop_os-19-04/">Lea más aquí!</a></li>
+                        <li><a href="https://pop.system76.com/">Pop_OS!</a></li>
+                    </ul>
+                </section>
+                <footer id="final">
+                    <p>
+                        ¿Te apetece probar Pop!_OS? En la página web oficial encontrarás dos imágenes de instalación: para
+                        Intel/AMD y NVIDIA, esta última con los controladores privativos preinstalados.
+                    </p>
+                </footer>
+            </article>
+
+        </div>
+        <div class="contenido">
+            <ul id="os">
+                <li>Debian</li>
+                <li>Kali</li>
+                <li>Mint</li>
+            </ul>
+            <ul id="tools">
+                <li>GIT</li>
+                <li>Docker</li>
+                <li>Nginx</li>
+            </ul>
+
+        </div>
+
+        <div class="fixed">
+            <ul>
+                <li>
+                    <a target="_blank" class="atom" href="https://atom.io/">
+                        <img src="../imagenes/atom.logo.png" alt="Atom">
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" class="atom" href="https://www.vim.org/">
+                        <img src="../imagenes/vim.logo.png" alt="Vim Text editor">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div id="minipage">
+            <div id="navigation">
+                <ul>
+                    <li><a href="position.html">Positions</a></li>
+                    <li><a href="#">That</a></li>
+                    <li><a href="#">The Other</a></li>
+                    <li><a href="#">The Other</a></li>
+
+                </ul>
+            </div>
+
+            <div id="content">
+                <h3>Posiciones y Display de una pagina</h3>
+                <p>(Ra ra banjo banjo)</p>
+                <p>(Ra ra banjo banjo)</p>
+                <p>(Ra ra banjo banjo)</p>
+            </div>
+            <div id="footer">
+                <p>Footer! Hoorah!</p>
+            </div>
+        </div>
+
+        <footer>Hecho por @SANTIAGO</footer>
+    </body>
+</html>

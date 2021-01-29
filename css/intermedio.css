@@ -1,0 +1,384 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+/* html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+} */
+/* HTML5 display-role reset for older browsers */
+/* article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+} */
+
+
+.violeta {
+    color: purple;
+}
+
+.desafio1 {
+    color: orange;
+    font-size: 80px;
+}
+
+#intro{
+    color:#5E610B;
+    /* color:#F2F5A9; */
+    font: 2em/1.5 "Times New Roman", times, serif;
+    padding: 20px 10px;
+    font-weight: bolder;
+    border: 5px black solid;
+    /* border-width: 1px 5px 5px 1px; */
+    border-color: #F7FE2E #5E610B #F7FE2E #5E610B;
+    margin: 10px 20px;
+    text-align: center;
+}
+
+/*
+Predefined color names include:
+ aqua, black, blue, fuchsia, gray, green, lime, maroon, navy, olive, purple,
+ red, silver, teal, white, and yellow.
+ transparent is also a valid value.
+ */
+body {
+  /* font: 100% arial, helvetica, sans-serif; */
+  /* color: #0B3861; */
+  /* font-size: 14px; */
+  /* background-color: #F3E2A9; */
+  font-family: monospace, arial;
+  font-size: 1em;
+  margin: 20px;
+  padding: 1em;
+  /* background: #F3E2A9 url(http://www.htmldog.com/images/bg.gif) no-repeat top left; */
+  background: url(http://www.htmldog.com/images/bg.gif) repeat-y top right;
+  /* background: url(http://www.htmldog.com/images/bg.gif) 0% 0% / 4em repeat-x; */
+}
+
+/* Grouping */
+h1, h2, h3, h4, h5, figure {
+    font-style: oblique;
+    text-decoration: underline;
+}
+
+table {
+    color: #08088A;
+    background-color: #CED8F6;
+    border: 4px solid #0B2161;
+}
+td, th {
+    border: 2px solid #444;
+
+}
+
+ol, ul {
+	list-style: none;
+}
+
+
+footer {
+    width: 80%;
+    height: 40px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 20px;
+    border: 4px solid #F3E2A9;
+}
+
+/* CSS Intermedio HTML Dog */
+/*
+.intro {
+    color: red;
+    font-weight: bold;
+}
+*/
+#top {
+    background-color: #ccc;
+    padding: 1em
+}
+
+#top h2 {
+    color: #ff0;
+    text-decoration: none;
+}
+
+
+#top p {
+    color: red;
+    font-weight: bold;
+    font-size: 1em;
+
+}
+
+#top p:first-of-type {
+    text-decoration: underline;
+    font-size: 2em;
+}
+
+#top p:last-child {
+    font-weight: lighter;
+    text-decoration: line-through;
+    font-size: 1.5em;
+}
+
+#main_nav {
+    background-color: #F3E2A9;
+    /* padding: 2em 0; */
+	position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+
+#main_nav li {
+	display: inline;
+}
+
+#main_nav a {
+    text-decoration: none;
+}
+
+/* Pseudo Clases */
+#main_nav li a:link {
+    color: #5882FA;
+
+}
+
+#main_nav li a:visited {
+    color: #2E64FE;
+}
+
+/* Pesudo clases dinámicas */
+#main_nav li a:active {
+    color: red;
+}
+
+#main_nav li a:hover {
+    text-decoration: none;
+    color: #0B2161;
+    background-color: #CECEF6;
+}
+
+#main_nav li a:focus {
+	text-decoration: none;
+	color:#F5F6CE;
+	background: #A9E2F3;
+
+}
+
+textarea {
+    padding: 0.5em 1em;
+    margin: 2em 0.5em;
+}
+
+input:focus, textarea:focus {
+    background: #F3E2A9;
+    color: #29220A;
+}
+
+.contenido {
+    margin: 0.5em 1em;
+    padding: 10px 20px;
+    background: #F7D358;
+}
+
+
+/* Nesting */
+#navigation a {
+    display: block;
+    margin: 0.5em 1em;
+    padding: 20px 10px;
+}
+
+
+#navigation a.dn {
+	display: none;
+    /* visibility: hidden; */
+}
+
+/* Pseudo elementos */
+div p:first-letter {
+    font-size: 1.5em;
+}
+
+p:first-line {
+    font-weight: bolder;
+	/* font-family: verdana; */
+}
+
+#miCodigo {
+	font-family: verdana;
+}
+
+/* Nesting */
+#miCodigo code {
+	color: #5F4C0B;
+	font-weight: bolder;
+}
+
+
+/* abreviaciones de estilo */
+#miCodigo pre {
+	margin: 5px 5px;
+	padding: 4px 4px;
+
+	/* border-width: 1px;
+	border-color: red;
+	border-style: solid; */
+	border: 5px solid #5F4C0B;
+}
+
+#final p {
+    font: 14px/1.5 "Times New Roman", times, serif;
+    padding: 30px 10px;
+    border: 1px black solid;
+    border-width: 1px 5px 5px 1px;
+    border-color: red green blue yellow;
+    margin: 10px 50px;
+}
+
+#os, #tools	{
+	border: 5px solid #FA5882;
+	padding: 4px;
+}
+
+#os li {
+	display: inline;
+	border: 10px solid #B40431;
+}
+
+#tools li {
+	display: block;
+    margin: 20px 10px;
+	border: 5px solid #B40431;
+}
+
+#tools li:before {
+    content: url('../imagenes/ubuntu.png');
+    /* background: red;
+    color: #fc0; */
+}
+
+.fixed {
+	position: fixed;
+	top: 6%;
+	right: 5%;
+	text-align: right;
+}
+
+.fixed img {
+	width: 10%;
+}
+
+.fixed a:hover {
+    text-decoration: none;
+	background-color: transparent;
+}
+
+.fixed a:focus {
+	text-decoration: none;
+	background-color: transparent;
+}
+
+#minipage {
+	border: 5px solid #F7D358;
+}
+
+#navigation {
+    /* position: relative;
+    top: 0;
+    left: 0;
+    width: 200px; */
+	float: left;
+    width: 200px;
+}
+
+#content {
+	margin: 0 200px;
+}
+
+#footer {
+    clear: both;
+	text-align: center;
+}
+
+.display {
+    width: 80%;
+    background-color: #ECF6CE;
+    border: 2px solid #38610B;
+    margin: 5px;
+    padding: 4px 4px;
+}
+
+.static, .relative, .absolute, .displayFixed {
+    padding: 4px 4px;
+}
+
+.static {
+    /* Este estado es el natural */
+    background-color: #CEF6CE;
+}
+
+.relative {
+    position: relative;
+    top: 150px;
+    left: 50px;
+    background-color: #CEF6E3;
+    border: 2px solid #0B614B;
+
+}
+
+.absolute {
+    position: absolute;
+    bottom: 2em;
+    right: 2em;
+    background-color: #CEE3F6;
+    border: 2px solid #0B3861;
+
+}
+
+.displayFixed {
+    position: fixed;
+    top: 0;
+    left: 75%;
+    width: 100px;
+    height: 100%;
+    background-color: #CECEF6;
+    border: 2px solid #0B0B61;
+}

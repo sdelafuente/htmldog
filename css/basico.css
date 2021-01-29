@@ -1,0 +1,120 @@
+/*
+Predefined color names include:
+ aqua, black, blue, fuchsia, gray, green, lime, maroon, navy, olive, purple,
+ red, silver, teal, white, and yellow.
+ transparent is also a valid value.
+ */
+body {
+  /* font: 100% arial, helvetica, sans-serif; */
+  color: #0B3861;
+  background-color: #EFF5FB;
+  font-size: 14px;
+  font-family: monospace, arial;
+  margin: 20px;
+  padding: 0;
+  /* font-weight: 300; */
+}
+
+h1 {
+    color: #ffc;
+    background-color: #900;
+    font-size: 2em;
+    margin: 0;
+    margin-bottom: 7px;
+    padding: 4px;
+    font-style: italic;
+    text-align: center;
+    letter-spacing: 0.5em;
+    border-bottom-style: solid;
+    border-bottom-width: 0.5em;
+    border-bottom-color: #c00;
+    /* font-weight: bolder;
+    text-decoration: line-through; */
+}
+
+h2 {
+    color: white;
+    background-color: #090;
+    font-size: 1.5em;
+    margin: 0;
+    padding: 2px;
+    padding-left: 14px;
+  /* color: #f60;
+  background-color: #ccc;
+  margin: 20px;
+  padding: 40px;
+  font-weight: lighter;
+  text-decoration: overline; */
+}
+
+h2:target {
+  color: white;
+  background: #f60;
+}
+
+h3 {
+    color: #999;
+    font-size: 1.25em;
+    font-style: oblique;
+    text-decoration: underline;
+}
+
+img {
+    background-color: #FBEFEF;
+    margin: 20px;
+    padding: 20px;
+    border: 20px ridge #F78181;
+    /* border: 20px solid #F78181; */
+    /* border: 20px dotted #F78181; */
+    /* border: 20px dashed #F78181; */
+    /* border: 20px double #F78181; */
+    /* border: 20px groove #F78181; */
+    /* border: 20px inset #F78181; */
+    /* border: 20px outset #F78181; */
+}
+
+p {
+    line-height: 21px;
+    /* letter-spacing: 0.5em;
+    word-spacing: 0.5em;
+    line-height: 1.1;
+    text-align: left; */
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+strong {
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+li {
+    color: #900;
+    font-style: italic;
+}
+
+table {
+    background-color: #ccc;
+}
+
+em {
+    text-transform: capitalize;
+    border-style: dotted;
+    border-width: 3px;
+    border-left-width: 4px;
+    border-right-width: 4px;
+    border-color: #4B8A08;
+}
+
+form {
+    background-color: #E3F6CE;
+    padding: 2px;
+    width: 35%;
+}
+
+form input {
+    display: inline;
+}

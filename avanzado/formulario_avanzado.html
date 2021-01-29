@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <link rel="shortcut icon" type="image/png" href="../imagenes/favicon.ico"/>
+        <link rel="stylesheet" href="../css/avanzado.css">
+        <title>Avanzado</title>
+    </head>
+    <body>
+        <nav id="main_nav">
+            <ul>
+                <li>
+                    <a href="../index.html" target="_self" tabindex="1">VOLVER</a>
+                </li>
+                <li>
+                    <a href="../basico/basico.html" tabindex="2">BASICO</a>
+                </li>
+                <li>
+                    <a href="../intermedio/intermedio.html" tabindex="3">INTERMEDIO</a>
+                </li>
+                <li>
+                    <a href="avanzado.html" tabindex="4">AVANZADO</a>
+                </li>
+            </ul>
+        </nav>
+        <h1>Formulario Avanzado</h1>
+        <div class="contenido">
+            <form class="" action="index.html" method="post">
+                <label for="telephone_number">Teléfono: </label>
+                <input type="tel" name="telephone_number">
+                <br>
+                <label for="buscar">Buscar: </label>
+                <input type="search" name="buscar" autofocus>
+                <br>
+                <label for="web_address">Web: </label>
+                <input type="url" name="web_address">
+                <br>
+                <label for="email_address">Buscar Email: </label>
+                <input type="email" name="email_address"placeholder="you@somewhere.com" >
+                <br>
+                <label for="rango">Rango: </label>
+                <input type="number" name="rango" step="1" min="21" max="99">
+                <br>
+                <label for="temperature">Temperatura: </label>
+                <input type="range" name="temperature" min="15" max="25" step="0.5" value="18.5">
+                <br>
+                <label for="color">Color: </label>
+                <input name="color" type="color" value="#D0A9F5">
+                <br>
+                <label for="country">Paises: </label>
+                <input name="country" list="pais_nombre">
+                <datalist id="pais_nombre">
+                    <option value="Afghanistan">
+                    <option value="Albania">
+                    <option value="Algeria">
+                    <option value="Andorra">
+                    <option value="Argentina">
+                    <option value="Armenia">
+                    <option value="Australia">
+                    <option value="Austria">
+                    <option value="Azerbaijan">
+                    <!-- etc. -->
+                </datalist>
+                <br>
+            </form>
+        </div>
+        <div class="contenido">
+            <h3>Video</h3>
+            <video src="../imagenes/futurama_3d.mp4" width="500" loop muted autoplay controls>
+            </video>
+            <video src="../imagenes/futurama-intro.mp4" poster="../imagenes/phillipjfry.jpg" width="500" controls>
+                <img src="../imagenes/zoidberg.jpg" alt="El Dr. Zoidberg.">
+            </video>
+            <video src="../imagenes/futurama-intro.mp4" width="500" loop muted controls>
+                <img src="../imagenes/bender.jpg" alt="El Dr. Zoidberg.">
+            </video>
+            <!-- <video controls>
+                <source src="../imagenes/futurama_3d.mp4" type="video/mp4; codecs='avc1, mp4a'">
+                <p>Al navegador no le gusta el HTML 5</p>
+            </video> -->
+        </div>
+        <div class="contenido">
+            <h3>Audio</h3>
+            <audio src="../imagenes/intro-simpsons.m4a" controls>
+                Your stupid browser doesn't support HTML 5 audio.
+            </audio>
+        </div>
+
+        <div class="contenido">
+            <h3>Canvas</h3>
+            <canvas id="wittykitty" width="800" height="450">
+                <!-- Fall-back content here, just like with video and audio -->
+            </canvas>
+        </div>
+    </body>
+</html>

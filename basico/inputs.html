@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../css/basico.css">
+        <title>Inputs</title>
+        <style>
+    		body {
+    			font: 100% arial, helvetica, sans-serif;
+    		}
+
+    		fieldset {
+    			padding: 0 1em 1em 1em;
+    		}
+
+    		legend {
+    			padding: 1em;
+    		}
+    	</style>
+    </head>
+    <body>
+        <a href="basico.html">Volver</a>
+        <h2>Inputs</h2>
+
+        <form class="" action="index.html" method="post">
+
+            <input type="text" name="texto" value="Texto" maxlength="20" disabled>
+            <input type="text" name="nombre" placeholder="Tu nombre aquí" maxlength="40" required>
+
+            <label for="password">password</label><input type="password" name="password" value="">
+            Harina<input type="checkbox" name="comida" value="1">
+            Queso<input type="checkbox" name="comida" value="2">
+            Leche<input type="checkbox" name="comida" value="4">
+            Fideos<input type="checkbox" name="comida" value="4" checked>
+            verde:<input type="radio" name="colores" value="verde">
+            rojo<input type="radio" name="colores" value="rojo" checked>
+            amarillo<input type="radio" name="colores" value="amarillo">
+            <input type="image" src="http://www.htmldog.com/badge1.gif" name="imagen" value="Imagen" alt="Imagen del perro" width="120" height="90">
+            <input type="file" name="archivo" value="Archivo" accept="audio/*" multiple>
+            <input type="button" name="boton" value="Soy un botón...así nomas.">
+            <input type="search" name="busqueda" value="busqueda" placeholder="Buscamos algo como...">
+            <input type="tel" name="telefono" value="Telefono" >
+            <input type="url" name="url" value="URL" placeholder="www....">
+            <input type="email" name="email" autofocus multiple placeholder="user@domain.com">
+            <input type="date" name="fecha" value="" step="3">
+            <input type="time" name="hora" value="" max="12">
+            Rango numérico<input type="number" name="numero" value="" min="10" max="20">
+            <input type="hidden" name="oculto" value="Oculto">
+            <input type="reset" name="limpiar" value="Limpiar">
+            <input type="submit" name="enviar" value="Enviar">
+        </form>
+    </body>
+</html>

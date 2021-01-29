@@ -1,0 +1,330 @@
+* {
+    /* margin: 0; */
+    /* padding: 0; */
+}
+
+#contact * {
+    display: block;
+}
+
+@font-face {
+    font-family: "Ubuntu Regular";
+    src: url(ubuntu.regular.ttf);
+}
+
+body {
+  /* font-family: arial; */
+  font-family: "Ubuntu Regular";
+  /* font-family: Vegur, 'PT Sans', Verdana, sans-serif; */
+  font-size: 1em;
+  margin: 20px;
+  /* padding: 1em; */
+  padding-top:3%;
+  background-color: #CEECF5;
+}
+
+/* Grouping */
+h1, h2, h3, h4, h5, figure {
+    /* font-style: oblique; */
+    text-decoration: underline;
+}
+
+h1 {
+    text-align: center;
+    text-transform:uppercase;
+    /* box-shadow: inset 0 0 3px 1px #999; */
+    /* Color Avanzado */
+    color: rgba(177, 44, 44, 0.7);
+}
+
+#navigation {
+    background-color: #0B4C5F;
+	position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px;
+    box-shadow: 5px 5px 3px 1px #999;
+}
+
+#navigation li {
+	display: inline;
+    padding-right: 20px;
+    color: #01A9DB;
+}
+
+#navigation a {
+    text-decoration: none;
+    padding: 5px;
+}
+
+/* Pseudo Clases */
+#navigation li a:link {
+    color: #E0F2F7;
+}
+
+#navigation li a:visited {
+    color: #E0F2F7;
+}
+
+/* Pesudo clases dinámicas */
+#navigation li a:active {
+    color: red;
+}
+
+#navigation li a:hover {
+    text-decoration: none;
+    color: #0B4C5F;
+    background-color: #E0F2F7;
+}
+
+#navigation li a:focus {
+	text-decoration: none;
+    color:#0B4C5F;
+	background-color: #A9E2F3;
+    outline: none;
+}
+
+.contenido {
+    margin: 0.5em 1em;
+    padding: 10px 20px;
+    background: #E0F2F7;
+    box-shadow: 1px 2px 2px 2px #999;
+}
+
+table {
+    width: 40%;
+    /* border: 4px solid #0B2161; */
+    color: #08088A;
+    background-color: #CED8F6;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: -2px 2px 2px #999;
+}
+
+td, th {
+    border: 2px solid #444;
+}
+
+table .alternative {
+    background-color: #E0F2F7;
+    font-family: monospace;
+}
+
+footer {
+    width: 80%;
+    height: 40px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 20px;
+    border: 2px solid #0B4C5F;
+}
+
+.contenido_avanzado {
+    width: 200px;
+    height: 200px;
+    margin: 0.5em 1em;
+    position: relative;
+    float: left;
+    background-color: #0B4C5F;
+    box-shadow: inset 0 0 5px 7px #0A2229;
+}
+
+#marilyn {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    background-color: #fff;
+    width: 100px;
+    height: 100px;
+    border-radius: 25px;
+}
+
+#monroe {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    background-color: #fff;
+    width: 100px;
+    height: 100px;
+    border-radius: 25px;
+    border-radius: 6px 12px 18px 24px;
+}
+
+#redondo {
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    border: 5px solid #8b2;
+    background-color: #fff;
+    border-radius: 5%;
+}
+
+#nano {
+    position: absolute;
+    top: 15%;
+    left: 25%;
+    background: #fff;
+    width: 100px;
+    height: 150px;
+    border-radius: 50px/100px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.contenidoV2 {
+    width: 600px;
+    height: 300px;
+    margin: 0.5em 1em;
+    position: relative;
+    background-color: #F8FBEF;
+    float: left;
+    box-shadow: inset 0 0 5px 7px #1B2A0A;
+}
+
+#texto-shadow {
+    color: #0B0B61;
+    font-weight: bold;
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    /* background-color: #fff; */
+    width: auto;
+    height: 100px;
+    /* border-radius: 25px; */
+    /*
+    The first value is the horizontal offset
+    The second value is the vertical offset
+    The third value is the blur radius (optional)
+    The fourth value is the color (optional, although omitting this will make the shadow the same color as the text itself)
+    */
+    text-shadow: 85px 85px 1px #999;
+}
+
+.footer {
+    clear: both;
+}
+
+.contenido form {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+/* Formulario HTML Avanzado */
+input[type=search] {
+     background: white url("../imagenes/lupa.png") right no-repeat;
+}
+
+input[type=email]:valid {
+    background: #E1F5A9;
+}
+
+input[type=email]:invalid {
+    background: #F5A9A9;
+}
+
+/*
+    Selector de Atributos
+    CSS 3 further allows you to match an attribute without being exact:
+
+    [attribute^=something] will match a the value of an attribute that begins with something.
+    [attribute$=something] will match a the value of an attribute that ends with something.
+    [attribute*=something] will match a the value of an attribute that contains something,
+    be it in the beginning, middle, or end.
+ */
+abbr[title] {
+    border-bottom: 1px dotted #ccc;
+}
+
+
+#genus_examples {
+    padding: 2px;
+    border: 1px solid black;
+    list-style: none;
+}
+/* Selector de hijos */
+#genus_examples > li {
+    border: 1px solid red;
+    margin: 1px;
+    padding: 2px;
+}
+
+/* Selecto adjacente. */
+/* h3 + p {
+    font-weight: bolder;
+} */
+h3 ~ p {
+    font-weight: bolder;
+}
+
+#smut {
+    /*
+        Hue (“36” in the above example): Any angle, from 0 to 360, taken from a typical color wheel,
+                                         where “0” (and “360”) is red, “120” is green and “240” is blue.
+        Saturation (“100%” in the example): How saturated you want the color to be,
+                                           from 0% (none, so a level of grey depending on the lightness) to 100%
+                                           (the whole whack, please).
+        Lightness (“50%” in the example): From 0% (black) to 100% (white), 50% being “normal”.
+     */
+    /*
+    color: hsl(36, 100%, 50%);
+    #ff9900, #f90, and rgb(255, 153, 0).
+    */
+    color: hsl(85, 90%, 40%);
+}
+
+#rabbit {
+    background: hsla(0, 75%, 75%, 0.5);
+}
+
+/*
+    Transiciones. Animaciones con color sin JS.
+
+ */
+#transicion {
+    width: 100px;
+    height: 100px;
+    background: #F78181;
+    /* transition: width 2s; */
+    transition: width 3s, height 3s, background 3s, color 3s;
+    /* transition-timing-function: ease; */
+    transition-timing-function: ease-ease-in;
+    /* transition-timing-function: linear; */
+    transition-delay: .5s;
+}
+#transicion:hover {
+  width: 200px;
+  height: 200px;
+  background: #B40404;
+  color: #F8E0E0;
+}
+
+div.contenido a {
+    color: hsl(36,25%,50%);
+}
+
+div.contenido a:link {
+    color: hsl(36,50%,50%);
+    transition: all .5s ease;
+}
+
+div.contenido a:hover {
+    color: hsl(36,100%,50%);
+    font-size: 1.2em;
+}
+
+
+
+@media print {
+    body {
+        font-size: 9pt;
+        font-family: times, serif;
+    }
+
+    #navigation {
+        display: none;
+    }
+}

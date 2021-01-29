@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <link rel="shortcut icon" type="image/png" href="../imagenes/favicon.ico"/>
+        <link rel="stylesheet" href="../css/avanzado.css">
+        <!--[if IE]><link href="stupidie.css" rel="stylesheet"><![endif]-->
+        <title>Avanzado</title>
+    </head>
+    <body>
+        <nav id="navigation">
+            <ul>
+                <li>
+                    <a href="../index.html" target="_self" tabindex="1">Volver</a>
+                </li>
+                <li>
+                    <a href="../basico/basico.html" tabindex="2">Básico</a>
+                </li>
+                <li>
+                    <a href="../intermedio/intermedio.html" tabindex="3">Intermedio</a>
+                </li>
+                <li>
+                    <a href="#css_avanzado" tabindex="4">Avanzado</a>
+                </li>
+                <li>
+                    <a href="formulario_avanzado.html" tabindex="4">Formulario</a>
+                </li>
+                <li>
+                    Explicación de porque soy programador. <a href="../index.html" tabindex="4" title="Por qué estoy repasando esta ininformación: Consejos y guia para escibir HTML.">Ir por acá</a> para averiguar más.
+                </li>
+            </ul>
+        </nav>
+        <h1>Avanzado</h1>
+
+        <div class="contenido">
+            <h3>time</h3>
+            <p>Mi cumpleaños es el <time datetime="1983-06-22T09:20-03:00">22 de Junio</time>.</p>
+            <p>
+                Este TAG es util para los motores de busquedas, para usarlo con los Blogs, donde el tiempo es relevante
+                para buscar. Internamente no es necesario para la página.
+            </p>
+            <p>
+                <a target="_blank" href="https://www.youtube.com/watch?v=zMwUvRNjFy4">EJEMPLO de TIME</a>
+            </p>
+        </div>
+
+        <div class="contenido">
+            <h3>mark (marcador/fibron)</h3>
+            <p>
+                Esta etiqueta hace referencia al marcador que usamos o resaltador de renglones para la facultad.
+            </p>
+            <blockquote>
+                <p>El <mark>galio</mark> es un elemento químico de la tabla periódica de <mark>número atómico 31 y símbolo Ga</mark>.</p>
+            </blockquote>
+        </div>
+
+        <div class="contenido">
+
+            <h3>Redefinición de Tags</h3>
+            <h4>hr, small, s, u, i, b, sub, sup</h4>
+            <p><em>hr</em>, que ya no es “regla horizontal”, es una ruptura temática, entre párrafos, por ejemplo, como los que se encuentran en muchos capítulos de muchos libros.</p>
+            <p><em>small</em>, usado para letra pequeña. Podría decirse que es un punto justo, "letra pequeña" ha adquirido un significado más allá de "letra pequeña".</p>
+            <p><em>s</em>, que ya no es "tachado", es para texto que ya no es correcto (por ejemplo, esto es <s> presentacional, no </s> significativo). Hmm. OKAY. Tal vez. del todavía parece estar bien para la mayoría de las personas normales.</p>
+            <p><em>u</em>, que ya no es "subrayado", es para texto que no está articulado. También es "inútil", pero es un punto de bonificación para la abreviatura que permanece intacta.</p>
+            <p><em>i</em>, que ya no es "cursiva", es para texto en una voz alternativa o que representa una calidad de texto diferente. Entonces, como, enfatizado de manera diferente, entonces (ver nota a continuación).</p>
+            <p><em>b</em>, que ya no es "negrita", significa "texto al que se llama la atención sin transmitir importancia o sugerir una voz alternativa" (e incluso eso es una paráfrasis). b también significa "tonterías".</p>
+            <p><em>sub y sup</em> siguen siendo subíndice y superíndice y, sin embargo, al mismo tiempo, de alguna manera ya no son de presentación.</p>
+
+        </div>
+
+        <div class="contenido">
+            <h3>colgroup, thead, tbody, & tfoot</h3>
+
+            <table>
+                <caption>Pasos para escribir HTML</caption>
+                <colgroup>
+                    <col>
+                    <col span="2" class="alternative">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <td>A</td>
+                        <td>B</td>
+                        <td>C</td>
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                    </tr>
+                </tfoot>
+                <tbody>
+                    <tr>
+                        <td>Cats</td>
+                        <td>Dogs</td>
+                        <td>Lemurs</td>
+                    </tr>
+                    <tr>
+                        <td>Caracal</td>
+                        <td>Red fox</td>
+                        <td>Brown lemur</td>
+                    </tr>
+                    <tr>
+                        <td>Wildcat</td>
+                        <td>Fennec</td>
+                        <td>Dwarf lemur</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="contenido">
+            <h3>fieldset, legend, optgroup</h3>
+            <form action="somescript.php" >
+                <fieldset>
+                    <legend>Nombre</legend>
+                    <!-- Accesskey = alt + letra -->
+                    <p>Nombre: <input name="firstName" accesskey="n"></p>
+                    <p>Apellido: <input name="lastName" accesskey="a"></p>
+                </fieldset>
+                <fieldset>
+                    <legend>Casa</legend>
+                    <p>Dirección:<textarea name="address_casa"></textarea></p>
+                    <p>Codigo Postal:<input name="postcode_casa"></p>
+                </fieldset>
+                <fieldset>
+                    <legend>Trabajo</legend>
+                    <p>Dirección:<textarea name="address_trabajo"></textarea></p>
+                    <p>Codigo Postal:<input name="postcode_trabajo"></p>
+                </fieldset>
+                <fieldset>
+                    <legend>Paises</legend>
+                    <select name="country" accesskey="p">
+                        <optgroup label="Africa">
+                            <option value="gam">Gambia</option>
+                            <option value="mad">Madagascar</option>
+                            <option value="nam">Namibia</option>
+                        </optgroup>
+                        <optgroup label="Europa">
+                            <option value="fra">Francia</option>
+                            <option value="rus">Rusia</option>
+                            <option value="uk">UK</option>
+                        </optgroup>
+                        <optgroup label="Sudamérica">
+                            <option value="arg">Argentina</option>
+                            <option value="bol">Bolivia</option>
+                            <option value="uru">Uruguay</option>
+                        </optgroup>
+                    </select>
+                </fieldset>
+                <!-- etc. -->
+            </form>
+
+        </div>
+        <div class="contenido">
+            <div id="css_avanzado" class="contenido_avanzado">
+                <div id="marilyn">
+                </div>
+            </div>
+            <div id="" class="contenido_avanzado">
+                <div id="monroe">
+                </div>
+            </div>
+            <div id="" class="contenido_avanzado">
+                <div id="redondo">
+                </div>
+            </div>
+            <div id="" class="contenido_avanzado">
+                <div id="nano">
+                </div>
+            </div>
+            <div class="footer">
+
+            </div>
+        </div>
+        <div class="contenido">
+            <h3>Sombra de Texto (text-shadow)</h3>
+            <div class="contenidoV2">
+                <div id="texto-shadow">
+                    <pre>
+                        <code>
+&lt;?php echo "Hola"; ?&gt;
+&lt;div id="intro"&gt;
+    &lt;h1&gt;Some heading&lt;/h1&gt;
+   &lt;p&gt;Some paragraph paragraph thing thing thingy.&lt;/p&gt;
+&lt;/div&gt;
+                        </code>
+                    </pre>
+                </div>
+            </div>
+
+            <div class="footer">
+
+            </div>
+        </div>
+        <div class="contenido">
+            <h3>Selector universal(*), Child(>) y Adjacente(+)</h3>
+            <ul id="genus_examples">
+                <li>Gatos
+                    <ul>
+                        <li>Panthera</li>
+                        <li>Felis</li>
+                        <li>Neofelis</li>
+                    </ul>
+                </li>
+                <li>Simios
+                    <ul>
+                        <li>Pongo</li>
+                        <li>Pan</li>
+                        <li>Homo</li>
+                    </ul>
+                </li>
+            </ul>
+            <h4>leopardos nublados</h4>
+            <p>Los leopardos nublados son gatos que pertenecen al género Neofelis.</p>
+            <p>Hay dos especies existentes: Neofelis nebulosa y Neofelis diardi.</p>
+
+        </div>
+        <div id="rabbit" class="contenido">
+            <textarea name="smut" id="smut" rows="8" cols="80">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque eget risus a placerat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sodales vehicula nisi, eu gravida ipsum pulvinar ut. Etiam posuere justo eu ligula auctor, nec volutpat arcu accumsan. Ut non cursus orci. Sed porttitor quis elit a hendrerit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam elit ipsum, tempor sit amet nisi non, aliquam euismod lectus. Fusce tincidunt tempus nulla vitae porttitor. Ut quam leo, condimentum nec lacus a, ultrices rhoncus neque. Proin tincidunt faucibus justo sed vehicula. Integer sed feugiat dui. Duis fringilla neque at tellus accumsan pretium.
+
+                Pellentesque lacinia sodales molestie. Maecenas quis dolor arcu. Proin imperdiet convallis vehicula. Nulla id turpis arcu. Quisque gravida ornare mi, sit amet interdum ante. Aenean quis pulvinar lacus. Sed vestibulum erat nec neque ultrices pellentesque.
+            </textarea>
+        </div>
+        <div class="contenido">
+            <p>
+                Estoy practicando <abbr title="Hojas de Estilo en Cascada">CSS</abbr>, mas específico, estilos avanzados.
+            </p>
+            <a href="mailto:santiagodelafuente83@gmail.com">Mandame un E-mail</a>
+        </div>
+        <div class="contenido">
+            <p>
+                <a href="https://www.htmldog.com/guides/css/advanced/transitions/">Este es un link con transición</a>
+            </p>
+            <div id="transicion" class="">
+                CSS
+            </div>
+        </div>
+        <footer>Hecho por @SANTIAGO</footer>
+    </body>
+</html>
