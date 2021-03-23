@@ -10,9 +10,9 @@ body {
   background-color: #CEF6CE;
   font-size: 14px;
   font-family: monospace, arial;
-  margin: 20px;
-  padding: 0;
-
+  /* margin: 20px; */
+  /* margin-top: 5%; */
+  /* padding: 0; */
 }
 
 h1 {
@@ -21,15 +21,14 @@ h1 {
     font-size: 2em;
     margin: 0;
     margin-bottom: 7px;
-    padding: 4px;
+    padding: 2px;
     font-style: italic;
     text-align: center;
     letter-spacing: 0.5em;
-    border: solid 0.5em #c00;
+    border: solid 0.2em #c00;
 }
 
 h2 {
-    color: white;
     background-color: #090;
     font-size: 1.5em;
     margin: 0;
@@ -51,4 +50,54 @@ p {
 a {
     text-decoration: none;
     text-transform: uppercase;
+}
+
+#navigation {
+    background-color: #0B4C5F;
+	position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px;
+    box-shadow: 5px 5px 3px 1px #999;
+}
+
+#navigation li {
+	display: inline;
+    padding-right: 20px;
+    color: #01A9DB;
+}
+
+#navigation a {
+    text-decoration: none;
+    padding: 5px;
+}
+
+
+/* Pseudo Clases */
+#navigation li a:link {
+    color: #E0F2F7;
+}
+
+#navigation li a:visited {
+    color: #E0F2F7;
+}
+
+/* Pesudo clases dinámicas */
+#navigation li a:active {
+    color: red;
+}
+
+#navigation li a:hover {
+    text-decoration: none;
+    color: #0B4C5F;
+    background-color: #E0F2F7;
+}
+
+#navigation li a:focus {
+	text-decoration: none;
+    color:#0B4C5F;
+	background-color: #A9E2F3;
+    outline: none;
 }

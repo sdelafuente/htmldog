@@ -8,7 +8,7 @@ body {
   /* font: 100% arial, helvetica, sans-serif; */
   color: #0B3861;
   background-color: #EFF5FB;
-  font-size: 14px;
+  font-size: 0.9em;
   font-family: monospace, arial;
   margin: 20px;
   padding: 0;
@@ -24,9 +24,9 @@ h1 {
     padding: 4px;
     font-style: italic;
     text-align: center;
-    letter-spacing: 0.5em;
+    letter-spacing: 0.2em;
     border-bottom-style: solid;
-    border-bottom-width: 0.5em;
+    border-bottom-width: 0.2em;
     border-bottom-color: #c00;
     /* font-weight: bolder;
     text-decoration: line-through; */
@@ -39,12 +39,14 @@ h2 {
     margin: 0;
     padding: 2px;
     padding-left: 14px;
-  /* color: #f60;
+  /*
+  color: #f60;
   background-color: #ccc;
   margin: 20px;
   padding: 40px;
   font-weight: lighter;
-  text-decoration: overline; */
+  text-decoration: overline;
+  */
 }
 
 h2:target {
@@ -61,9 +63,9 @@ h3 {
 
 img {
     background-color: #FBEFEF;
-    margin: 20px;
-    padding: 20px;
-    border: 20px ridge #F78181;
+    /* margin: 15px; */
+    padding: 5px;
+    border: 15px ridge #F78181;
     /* border: 20px solid #F78181; */
     /* border: 20px dotted #F78181; */
     /* border: 20px dashed #F78181; */
@@ -74,11 +76,14 @@ img {
 }
 
 p {
-    line-height: 21px;
-    /* letter-spacing: 0.5em;
+    /* En 5px se comprime la linea y se pegan los parrafos */
+    line-height: 1.1em;
+    /*
+    letter-spacing: 0.5em;
     word-spacing: 0.5em;
     line-height: 1.1;
-    text-align: left; */
+    text-align: left;
+    */
 }
 
 a {

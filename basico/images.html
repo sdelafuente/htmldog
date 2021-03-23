@@ -5,31 +5,44 @@
 	<link rel="stylesheet" href="../css/basico.css">
 	<title>Images: img</title>
 	<style>
-		body {
-			font-size: 20px;
-		}
 		article {
-			width: 480px;
+			width: 80%;
 			margin: auto;
 		}
 		h1, #htmldog {
 			text-align: center;
 		}
+        article p.img {
+            text-align: center!important;
+        }
 	</style>
 </head>
 <body>
 	<article>
 		<h1>Images</h1>
-		<p><a href="basico.html" target="_self">Volver</a></p>
+		<p>
+            <a href="basico.html" target="_self">Volver</a>
+        </p>
 		<p>HTML images, inserted using <a href="http://www.htmldog.com/references/html/tags/img/">the <code>img</code> tag</a>, are used for meaningful content.</p>
-		<img src="http://www.htmldog.com/examples/images/ecuador_anaconda.jpg" width="480" height="287" alt="Anaconda">
+        <p class="img">
+            <img src="http://www.htmldog.com/examples/images/ecuador_anaconda.jpg" width="480" height="287" alt="Anaconda">
+        </p>
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-		<img src="http://www.htmldog.com/examples/images/ecuador_tarantula.jpg" width="480" height="360" alt="Tarantula">
+        <p class="img">
+            <img src="http://www.htmldog.com/examples/images/ecuador_tarantula.jpg" width="480" height="360" alt="Tarantula">
+        </p>
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-		<img src="http://www.htmldog.com/examples/images/ecuador_owlMonkeys.jpg" width="480" height="315" alt="Owl monkeys">
+
+        <p class="img">
+            <img src="http://www.htmldog.com/examples/images/ecuador_owlMonkeys.jpg" width="480" height="315" alt="Owl monkeys">
+        </p>
 
 		<!-- Link back to HTML Dog: -->
-		<p id="htmldog"><a href="http://www.htmldog.com/examples/"><img src="http://www.htmldog.com/badge1.gif" alt="HTML Dog"></a></p>
+		<p id="htmldog">
+            <a href="http://www.htmldog.com/examples/">
+                <img src="http://www.htmldog.com/badge1.gif" alt="HTML Dog">
+            </a>
+        </p>
 	</article>
 </body>
 </html>
