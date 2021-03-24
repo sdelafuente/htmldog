@@ -122,3 +122,41 @@ article header h2 {
     background-color: inherit;
     /* font-size: 2em; */
 }
+
+#javascript div {
+  margin-bottom: 15px;
+  padding: 4px 12px;
+}
+
+#javascript .informacion {
+  background-color: #e7f3fe;
+  border-left: 8px solid #2196F3;
+}
+
+#javascript .parrafo {
+    font-size: 1.2em;
+    padding: 3px;
+}
+
+.btnColor {
+	box-shadow:inset 0px 0px 0px 0px #ffffff;
+	background:linear-gradient(to bottom, #ededed 5%, #dfdfdf 100%);
+	background-color:#ededed;
+	border-radius:10px;
+	display:inline-block;
+	cursor:pointer;
+	color:#777777;
+	font-weight:bold;
+	padding:24px 24px;
+    /* font-family:Arial; */
+    /* font-size:15px; */
+	/* text-decoration:none; */
+}
+.btnColor:hover {
+	background:linear-gradient(to bottom, #dfdfdf 5%, #ededed 100%);
+	background-color:#dfdfdf;
+}
+.btnColor:active {
+	position:relative;
+	top:1px;
+}

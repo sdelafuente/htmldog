@@ -15,10 +15,10 @@ var buttons    = document.querySelectorAll('.btn');
 
 // Event Listener
 var contactForm = document.getElementById('contact-form');
-var button = document.querySelector('#borrar');
+var button      = document.querySelector('#borrar');
 
-const form = document.getElementById('form');
-const log = document.getElementById('log');
+const form        = document.getElementById('form');
+const elementoLog = document.getElementById('log');
 
 // Manejar el click de un botón
 var handleClick = function (event) {
@@ -30,20 +30,23 @@ var handleClick = function (event) {
 button.addEventListener('click', handleClick);
 contactForm.addEventListener('submit', handleClick);
 
-function logSubmit(event) {
+// Función que se llama en un evento
+function generarLog(event) {
   // log.textContent = `Form Submitted! Time stamp: ${event.timeStamp}`;
-  //JSON
+
+  //Formato JSON
   var jsonString = JSON.stringify({
       make: "McLaren",
       model: "MP4-12C",
       miles: 5023
   });
 
-  log.textContent = jsonString;
+  // Asigno el valor dentro del elemento log
+  elementoLog.textContent = jsonString;
   event.preventDefault(); // Evita que la página se refresque
 }
 
-form.addEventListener('submit', logSubmit);
+form.addEventListener('submit', generarLog);
 
 // Scope - Alcance de Variables
 var aa = 10;
