@@ -28,13 +28,13 @@ var cuenta = (10 + 2) / 2 + 4 * 2;
 
 //------------- CONDICIONALES
 if (3 < 4) {
-    console.log("IF");
+    // console.log("IF");
 }
 
 if (10 < 5) {
-    console.log("if");
+    // console.log("if");
 } else {
-    console.log("else");
+    // console.log("else");
 }
 
 // --------------- LOOPS
@@ -56,7 +56,6 @@ var sumar = function (a, b) {
 };
 
 var resultado = sumar(16, 43);
-// console.log(resultado);
 
 // ------------- OBJETOS
 var jedi = {
@@ -66,20 +65,25 @@ var jedi = {
         alert('El miedo es el camino hacia el Lado Oscuro. El miedo lleva a la ira, la ira lleva al odio, el odio lleva al sufrimiento.');
     }
 }
-// console.log(jedi.nombre);
+// Invoco a la función hablar
 // jedi.hablar();
+
+// Modifico el objeto jedi
 jedi.nombre     = 'Obi-wan Kenobi';
 jedi.lightsaber = 'Blue';
 
 
+// Creo el objeto persona
 var persona = {
     edad: 37
 };
 
+// Agrego un objeto dentro de u atributo de otro objeto
 persona.nombre = {
     primero: "Santiago",
     segundo: "Daniel"
 };
+
 
 var perro = {};
 perro.ladrar = function() {
@@ -93,9 +97,9 @@ var arrayVacio = [];
 var listaDeCompras = ['Leche', 'Fideos', 'Manteca', 'Huevos'];
 
 // console.log(listaDeCompras[2]);
-console.log(listaDeCompras.length);
+// console.log(listaDeCompras.length);
 listaDeCompras.push('Jabón en polvo')
-console.log(listaDeCompras.length);
+// console.log(listaDeCompras.length);
 
 var helloFrom = function (personName) {
     return "Hello from " + personName;
@@ -110,5 +114,5 @@ people.pop();
 
 for (var i = 0; i < people.length; i++) {
     var greeting = helloFrom(people[i]);
-    alert(greeting);
+    // alert(greeting);
 }

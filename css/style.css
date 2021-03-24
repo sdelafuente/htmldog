@@ -8,7 +8,8 @@ body {
   font: 100% arial, helvetica, sans-serif;
   color: #0B3861;
   background-color: #CEF6CE;
-  font-size: 14px;
+  /* font-size: 14px; */
+  font-size: 1em !important;
   font-family: monospace, arial;
   /* margin: 20px; */
   /* margin-top: 5%; */
@@ -100,4 +101,24 @@ a {
     color:#0B4C5F;
 	background-color: #A9E2F3;
     outline: none;
+}
+
+/* Página de JS */
+#contact-form ul {
+    list-style: none;
+    background-color: #E0F8E0;
+    border: 2px solid #243B0B;
+    padding: 5px;
+    width: 30%;
+}
+
+article header p:first-of-type {
+    text-decoration: underline;
+    /* font-size: 2em; */
+}
+
+article header h2 {
+    text-decoration: underline;
+    background-color: inherit;
+    /* font-size: 2em; */
 }

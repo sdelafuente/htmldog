@@ -12,14 +12,76 @@
         <nav id="navigation">
             <ul>
                 <li>
-                    <a href="./index.html" target="_self" tabindex="1">Volver</a>
+                    <a class="btn" href="./index.html" target="_self" tabindex="1">Volver</a>
                 </li>
                 <li>
-                    <a href="#" tabindex="2">Javascript</a>
+                    <a class="btn" href="#" tabindex="2">Javascript</a>
                 </li>
             </ul>
         </nav>
         <p>Página dedicada a correr scripts</p>
+        <article>
+            <header id="header">
+                <h2>La Justice League de Zack Snyder solo está por debajo de The Dark Knight en IMDB</h2>
+                <p>Posted by Pablo Quintero</p>
+                <p>El reciente lanzamiento ha sido tan bien recibido por un sector de la audiencia, que está entre las películas de superhéroes con la mejor calificación en el popular portal.</p>
+            </header>
+            <p>El popular portal IMDB tiene un sistema de notas en el que cualquier persona puede calificar un título. A pesar de ese factor, no pocas personas utilizan las calificaciones de esta base de datos para tener claro si le dan o no una oportunidad. Por otro lado, también se generan verdaderas batallas entre fans que buscan inclinar la balanza en favor de sus películas favoritas. Por eso hay muchos que dan una nota perfecta, pero también otros que dan un 1 solo para arruinar la nota de otras producciones.</p>
+        </article>
+
+        <hr>
+
+        <form id="contact-form">
+            <!-- <input type="hidden" name="redirect" value="http://www.opera.com" /> -->
+            <ul>
+                <li>
+                    <label for="name">Nombre:</label>
+                    <input type="text" name="name" id="name" value="" placeholder="Nombre de contacto" />
+                </li>
+                <li>
+                    <label for="email">Email:</label>
+                    <input type="text" name="email" id="email" value="" placeholder="usuario@dominio.com"/>
+                </li>
+                <li>
+                    <label for="comments">Comentarios:</label>
+                    <textarea name="comments" id="comments" cols="20" rows="5"></textarea>
+                </li>
+                <li>
+                    <button id="big-button" type="submit" name="button">Guardar</button>
+                    <button id="borrar" type="reset" name="borrar">Borrar</button>
+                    <!-- <input id="" type="submit" value="Guardar" /> -->
+                    <!-- <input type="reset" value="borrar" /> -->
+                </li>
+            </ul>
+        </form>
+        <form id="form">
+          <label>Test field: <input type="text"></label>
+          <br>
+          <button type="submit">Submit form</button>
+        </form>
+        <p id="log"></p>
+
+        <!-- Agrego jquery al proyecto -->
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
         <script src="js/script.js"></script>
+        <script src="js/dom.js"></script>
+        <script src="js/jquery.js"></script>
+        <script type="text/javascript">
+            const logLocal = document.getElementById('log');
+
+            // AJAX
+            var req = new XMLHttpRequest();
+
+            req.onload = function (event) {
+                var yoda = JSON.parse(event.target.response)
+                logLocal.textContent = 'El nombre del objeto Json es: ' + yoda.name;
+            };
+
+            req.open('get', 'js/yoda.json', true);
+            // req.open('get', 'README.md', true);
+            // req.send();
+
+        </script>
     </body>
 </html>
