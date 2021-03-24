@@ -23,10 +23,11 @@ $('.btnColor').click(function () {
 $('.informacion').css('background', '#F78181').height(80);
 
 // Obtengo información de uno o varios objeto/s DOM
+// Getters and setters
 var currentHeight = $('.informacion').height(), currentColor = $('.informacion').css('color');
 
 
-// Limitar el alcance de un objeto DOM dentro de otro
+// Limitar el alcance o CONTEXTO de un objeto DOM dentro de otro
 var $articulo = $('article'), $articuloParrafo = $('.parrafo', $articulo);
 
 // Moficio uno los P que esten dentro de las etiquetas ARTICLE
